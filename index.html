@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DrugScan Privacy Policy</title>
+<meta name="description" content="Privacy policy for the DrugScan iOS app.">
+<style>
+  :root {
+    --bg:#ffffff; --fg:#1c1c1e; --muted:#6b6b70;
+    --rule:#e5e5ea; --accent:#4a80f0; --code:#f2f2f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#000000; --fg:#f2f2f7; --muted:#9a9aa0;
+            --rule:#2c2c2e; --accent:#6d9bff; --code:#1c1c1e; }
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; background:var(--bg); color:var(--fg);
+    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-text-size-adjust:100%;
+  }
+  main { max-width:720px; margin:0 auto; padding:48px 16px 96px; }
+  h1 { font-size:2rem; line-height:1.2; margin:0 0 .25em; letter-spacing:-.02em; }
+  h2 { font-size:1.25rem; margin:2.25em 0 .6em; padding-top:1.2em;
+       border-top:1px solid var(--rule); letter-spacing:-.01em; }
+  h2:first-of-type { border-top:0; padding-top:0; }
+  p { margin:0 0 1em; }
+  .updated { color:var(--muted); font-size:.95rem; margin-bottom:2em; }
+  ul { padding-left:1.25em; margin:0 0 1em; }
+  li { margin:.45em 0; }
+  a { color:var(--accent); }
+  code { background:var(--code); padding:.15em .4em; border-radius:5px;
+         font-size:.88em; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; }
+  table { width:100%; border-collapse:collapse; margin:0 0 1.25em; font-size:.94rem; display:block; overflow-x:auto; }
+  th,td { text-align:left; padding:.6em .7em; border-bottom:1px solid var(--rule); vertical-align:top; }
+  th { font-weight:600; }
+  strong { font-weight:600; }
+</style>
+</head>
+<body><main>
+<h1>DrugScan Privacy Policy</h1>
+<p class="updated">Last updated: September 23, 2026</p>
+<p>DrugScan (&quot;we&quot;, &quot;the app&quot;) helps you look up FDA drug-label information and dietary-supplement labels by scanning a barcode, photographing the medication name on a label, or searching by name.</p>
+<h2>The short version</h2>
+<ul>
+<li><strong>There are no accounts.</strong> DrugScan does not ask you to sign in, and we never learn who you are.</li>
+<li><strong>Your saved medications and history never leave your device.</strong></li>
+<li><strong>Photos of labels are never uploaded or stored.</strong> They are read on your iPhone and discarded.</li>
+<li><strong>We do not sell your data, run ads, or include any analytics or tracking SDKs.</strong></li>
+<li>The one thing that leaves your device is <strong>the name of the medication you look up</strong>, sent to retrieve its label and generate a summary.</li>
+</ul>
+<h2>What stays on your device</h2>
+<p><strong>Saved medications, scan history, and your remaining free lookups</strong> are stored locally in the iOS Keychain and app storage. They are never transmitted to us and we cannot see them.</p>
+<p><strong>Label photos and camera frames.</strong> The camera reads barcodes and, in the &quot;Scan Label&quot; feature, recognizes the printed medication name — including on pharmacy prescription labels that may show your name, your prescriber, or an Rx number. <strong>All of this image processing happens on your iPhone</strong> using Apple&#x27;s Vision framework. The image is never uploaded and never saved. Only the medication name extracted from it is used for the lookup, exactly as if you had typed it.</p>
+<h2>What leaves your device</h2>
+<p><strong>Label lookups.</strong> To fetch label information, the app sends the scanned code or the medication name to public U.S. government health databases: <strong>openFDA</strong> and <strong>DailyMed</strong> (U.S. National Library of Medicine), and the <strong>NIH Dietary Supplement Label Database (DSLD)</strong>. No identifier of any kind accompanies these requests.</p>
+<p><strong>Plain-language summaries.</strong> When you open a label, the medication name and public label fields (purpose, warnings, dosage, ingredients) are sent to our summary service, which uses <strong>OpenAI</strong> to generate the summary. No account, name, device identifier, or other personal information is included, because the app holds none. Our service does not log or store the contents of these requests. OpenAI may retain API inputs for a limited period for abuse monitoring under its own policies. On devices that support on-device summarization with Apple Intelligence, that processing happens entirely on your iPhone and nothing is sent.</p>
+<p><strong>Technical request data.</strong> Our summary service is rate-limited to prevent abuse, which involves briefly holding the requesting IP address in memory. It is not written to disk, logged, or retained.</p>
+<h2>What we collect</h2>
+<p>Apple requires apps to declare data collection. Our single declaration is:</p>
+<table><thead><tr><th>Category</th><th>Purpose</th><th>Linked to you?</th><th>Used for tracking?</th></tr></thead><tbody>
+<tr><td><strong>Health</strong> — the medication you look up</td><td>App functionality (retrieving the label and generating its summary)</td><td><strong>No</strong></td><td><strong>No</strong></td></tr>
+</tbody></table>
+<p>We consider the medication you search for to be health-related information, so we declare it even though it reaches us without any identifier and cannot be traced back to you.</p>
+<p>We collect <strong>no</strong> contact information, <strong>no</strong> name or email, <strong>no</strong> device or advertising identifiers, <strong>no</strong> location, <strong>no</strong> usage analytics, and <strong>no</strong> diagnostics.</p>
+<h2>Subscriptions</h2>
+<p>Purchases are processed by <strong>Apple</strong> through the App Store. Your subscription is tied to your Apple ID, not to any account with us. We never receive or store your payment card details.</p>
+<h2>Sharing</h2>
+<p>We do <strong>not</strong> sell your personal information and we do <strong>not</strong> share it with advertisers or data brokers. Information is shared only with the providers needed to run the app: <strong>Apple</strong> (App Store purchases), <strong>OpenAI</strong> (generating summaries), and the public <strong>FDA/NIH</strong> databases, which receive only the code or search term needed to return label data.</p>
+<h2>Retention &amp; deletion</h2>
+<p>Because we hold no account and store nothing about you on our servers, there is no profile to delete. You control all of your data directly:</p>
+<ul>
+<li><strong>Clear saved medications and history:</strong> Account → Clear scan history.</li>
+<li><strong>Delete everything:</strong> delete the app from your iPhone.</li>
+</ul>
+<p>To ask a question about this policy or request information, contact us at <a href="mailto:drugscan.support@gmail.com.">drugscan.support@gmail.com.</a></p>
+<h2>Children</h2>
+<p>DrugScan is not directed to children under 13, and we do not knowingly collect their personal data.</p>
+<h2>Medical disclaimer</h2>
+<p>Information in DrugScan comes from public FDA (openFDA/DailyMed) and NIH (DSLD) databases; for supplements, it is self-reported by manufacturers and may be incomplete. Label matching — especially reading a medication name from a photo — is a best guess and can be wrong, so always confirm the result matches the product in your hand. All content, including generated summaries, is for informational purposes only and is <strong>not medical advice</strong>. Always read the product label and consult a pharmacist or clinician.</p>
+<h2>Changes</h2>
+<p>We may update this policy; material changes will be reflected by the &quot;Last updated&quot; date above.</p>
+<h2>Contact</h2>
+<p>E &amp; E LLC — <a href="mailto:drugscan.support@gmail.com">drugscan.support@gmail.com</a></p>
+</main></body>
+</html>
