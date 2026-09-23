@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DrugScan Support</title>
+<meta name="description" content="Support and frequently asked questions for the DrugScan iOS app.">
+<style>
+  :root {
+    --bg:#ffffff; --fg:#1c1c1e; --muted:#6b6b70;
+    --rule:#e5e5ea; --accent:#4a80f0; --code:#f2f2f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#000000; --fg:#f2f2f7; --muted:#9a9aa0;
+            --rule:#2c2c2e; --accent:#6d9bff; --code:#1c1c1e; }
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; background:var(--bg); color:var(--fg);
+    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-text-size-adjust:100%;
+  }
+  main { max-width:720px; margin:0 auto; padding:48px 16px 96px; }
+  h1 { font-size:2rem; line-height:1.2; margin:0 0 .25em; letter-spacing:-.02em; }
+  h2 { font-size:1.25rem; margin:2.25em 0 .6em; padding-top:1.2em;
+       border-top:1px solid var(--rule); letter-spacing:-.01em; }
+  h2:first-of-type { border-top:0; padding-top:0; }
+  p { margin:0 0 1em; }
+  .updated { color:var(--muted); font-size:.95rem; margin-bottom:2em; }
+  ul { padding-left:1.25em; margin:0 0 1em; }
+  li { margin:.45em 0; }
+  a { color:var(--accent); }
+  code { background:var(--code); padding:.15em .4em; border-radius:5px;
+         font-size:.88em; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; }
+  table { width:100%; border-collapse:collapse; margin:0 0 1.25em; font-size:.94rem; display:block; overflow-x:auto; }
+  th,td { text-align:left; padding:.6em .7em; border-bottom:1px solid var(--rule); vertical-align:top; }
+  th { font-weight:600; }
+  strong { font-weight:600; }
+</style>
+<style>
+  .nav { margin:0 0 2.5em; font-size:.95rem; }
+  .nav a { text-decoration:none; }
+  h3 { font-size:1.02rem; margin:1.8em 0 .4em; }
+  .q { border-left:3px solid var(--rule); padding-left:1em; margin:1.5em 0; }
+  .q h3 { margin-top:0; }
+  .q p:last-child { margin-bottom:0; }
+  .contact { background:var(--code); border-radius:10px; padding:1.1em 1.2em; margin:0 0 2em; }
+  .contact p:last-child { margin-bottom:0; }
+</style>
+</head>
+<body>
+<main>
+<h1>DrugScan Support</h1>
+<p class="updated">Last updated: September 23, 2026</p>
+
+<div class="contact">
+<p><strong>Need help, found a bug, or have a question?</strong></p>
+<p>Email <a href="mailto:drugscan.support@gmail.com">drugscan.support@gmail.com</a> and we'll get back to you. Telling us your iPhone model, iOS version, and the medication you were looking up helps us answer faster.</p>
+</div>
+
+<h2>Scanning</h2>
+
+<div class="q">
+<h3>The barcode scanner won't read my pharmacy bottle</h3>
+<p>That's expected. Bottles filled by a pharmacy usually carry the <em>pharmacy's own Rx number</em>, not the manufacturer's NDC barcode, and that code means nothing outside that pharmacy's system.</p>
+<p>Use <strong>Scan Label</strong> instead. It photographs the bottle and reads the printed medication name on your iPhone, then looks that up. It's built for exactly this case.</p>
+</div>
+
+<div class="q">
+<h3>Scan Label found the wrong medication</h3>
+<p>Reading a name off a label is a best guess, and pharmacy labels abbreviate heavily. When the match list appears, you can edit the name in the text field and search again — that's usually faster than retaking the photo.</p>
+<p>If it still misses, try a photo where the drug name is in focus, fills more of the frame, and isn't covered by a curved part of the bottle.</p>
+</div>
+
+<div class="q">
+<h3>Nothing was found for my barcode</h3>
+<p>Two common reasons. First, you may have scanned the pharmacy's Rx barcode rather than the manufacturer's NDC — look for the NDC printed on the original carton. Second, some products (many supplements especially) simply aren't in the FDA's database.</p>
+<p>You can also tap <strong>Enter NDC manually</strong> and type the number printed on the package.</p>
+</div>
+
+<div class="q">
+<h3>Does the app work without internet?</h3>
+<p>No. Scanning and text recognition run on your iPhone, but looking up the label requires a connection to the FDA's public databases.</p>
+</div>
+
+<h2>Subscription</h2>
+
+<div class="q">
+<h3>How many free lookups do I get?</h3>
+<p>Three per install. After that, a subscription unlocks unlimited lookups and the plain-language summaries.</p>
+</div>
+
+<div class="q">
+<h3>How do I cancel?</h3>
+<p>On your iPhone: <strong>Settings → tap your name → Subscriptions → DrugScan → Cancel Subscription</strong>. Your access continues until the end of the period you already paid for.</p>
+<p>Subscriptions are billed by Apple, so cancelling has to happen there — we can't cancel or refund on your behalf. For refunds, use <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+</div>
+
+<div class="q">
+<h3>I subscribed but the app still shows the paywall</h3>
+<p>Open <strong>Account → Restore purchases</strong>. Make sure you're signed in with the same Apple ID you purchased with — the subscription is tied to your Apple ID, not to any account with us.</p>
+</div>
+
+<div class="q">
+<h3>I got a new iPhone. Do I need to buy it again?</h3>
+<p>No. Sign in with the same Apple ID and tap <strong>Account → Restore purchases</strong>. Note that your <em>saved medication list</em> does not transfer, because it's stored only on the device.</p>
+</div>
+
+<h2>Your data</h2>
+
+<div class="q">
+<h3>Do I need an account?</h3>
+<p>No. DrugScan has no accounts and no sign-in. We never learn who you are.</p>
+</div>
+
+<div class="q">
+<h3>Are my label photos uploaded?</h3>
+<p>Never. Barcode scanning and text recognition both run on your iPhone using Apple's Vision framework. The photo is read and discarded — it isn't saved or sent anywhere. Only the medication name is used for the lookup.</p>
+</div>
+
+<div class="q">
+<h3>How do I delete my data?</h3>
+<p>Everything is stored on your device. Use <strong>Account → Clear scan history</strong> to wipe your saved medications and history, or delete the app to remove all of it.</p>
+</div>
+
+<h2>Accuracy</h2>
+
+<div class="q">
+<h3>Where does the information come from?</h3>
+<p>The FDA's openFDA and DailyMed databases, and the NIH Dietary Supplement Label Database. Supplement data is self-reported by manufacturers and can be incomplete.</p>
+</div>
+
+<div class="q">
+<h3>Is this medical advice?</h3>
+<p><strong>No.</strong> DrugScan is an informational tool. Always confirm the result matches the product in your hand, read the product's own label, and consult a pharmacist or clinician about your medications.</p>
+</div>
+
+<h2>More</h2>
+<p><a href="../">Privacy Policy</a> &middot; <a href="mailto:drugscan.support@gmail.com">drugscan.support@gmail.com</a></p>
+<p class="updated">DrugScan is published by E &amp; E LLC.</p>
+</main>
+</body>
+</html>
